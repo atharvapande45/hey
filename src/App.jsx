@@ -10,7 +10,7 @@ export default function App() {
                 setStatement(`I am sorry ${index}`);
                 setIndex((prev) => prev + 100000);
             }
-        }, 0.0001);
+        }, 0.5);
         return () => clearInterval(intervalId);
     }, [index]);
 
