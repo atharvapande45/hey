@@ -11,6 +11,7 @@ export default function App() {
                 setIndex((prev) => prev + 91, 666.666666666666666666666666667);
             } else {
                 setStatement(`I am sorry ${5500000}`);
+                setIndex(5500000);
             }
         }, 1);
         return () => clearInterval(intervalId);
@@ -20,7 +21,7 @@ export default function App() {
         <div>
             <h1>{statement}</h1>
             <p>55 lakh sorries incoming 🦸‍♂️</p>
-            <p>I am becoming your sock next life 🧦</p>
+            {index == 5500000 && <p>I am becoming your sock next life 🧦</p>}
         </div>
     );
 }
