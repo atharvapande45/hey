@@ -15,6 +15,7 @@ export default function App() {
     return (
         <div>
             <h1>{statement}</h1>
+            <p>55 lakh sorries incoming 🦸‍♂️</p>
         </div>
     );
 }
