@@ -2,13 +2,13 @@ import React, { useState, useEffect } from "react";
 
 export default function App() {
     const [statement, setStatement] = useState("I am sorry");
-    const [index, setIndex] = useState(5499999);
+    const [index, setIndex] = useState(1);
 
     useEffect(() => {
         const intervalId = setInterval(() => {
             if (index < 5500000) {
                 setStatement(`I am sorry ${index}`);
-                setIndex((prev) => prev + 1);
+                setIndex((prev) => prev + 100000);
             }
         }, 0.0001);
         return () => clearInterval(intervalId);
