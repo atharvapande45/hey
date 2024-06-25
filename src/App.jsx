@@ -8,9 +8,11 @@ export default function App() {
         const intervalId = setInterval(() => {
             if (index <= 5500000) {
                 setStatement(`I am sorry ${index}`);
-                setIndex((prev) => prev + 100000);
+                setIndex((prev) => prev + 91, 666.666666666666666666666666667);
+            } else {
+                setStatement(`I am sorry ${5500000}`);
             }
-        }, 10);
+        }, 1);
         return () => clearInterval(intervalId);
     });
 
